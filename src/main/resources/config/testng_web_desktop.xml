@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Web Demo Suite" verbose="0" parallel="none" thread-count="100">
+<suite name="Web Demo Suite Sample" verbose="0" parallel="none" thread-count="100">
 	<listeners>
 		<!-- <listener class-name="com.quantum.listeners.QuantumReportiumListener" /> -->
 		<listener class-name="com.listeners.CustomQuantumReportiumListener"></listener>
