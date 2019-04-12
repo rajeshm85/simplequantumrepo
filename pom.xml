@@ -58,7 +58,6 @@
 					<systemPropertyVariables>
 						<application.properties.file>resources/application.properties</application.properties.file>
 					</systemPropertyVariables>
-
 					<suiteXmlFiles>
 						<suiteXmlFile>${testngXmlDir}/${testngXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
