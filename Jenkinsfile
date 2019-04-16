@@ -4,7 +4,7 @@ pipeline {
     stage('Clean and Clone') {
       steps {
         sh 'rm -rf simplequantumrepo'
-        sh '/Applications/apache-maven-3.2.2/bin/mvn clone https://github.com/rajeshm85/simplequantumrepo.git'
+        sh 'git clone https://github.com/rajeshm85/simplequantumrepo.git'
         sh '''
 /Applications/apache-maven-3.2.2/bin/mvn clean -f simplequantumrepo'''
       }
