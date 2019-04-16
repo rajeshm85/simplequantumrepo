@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh '/Applications/apache-maven-3.2.2/bin/mvn test -f simplequantumrepo'
+        sh '/Applications/apache-maven-3.2.2/bin/mvn test -f simplequantumrepo -DtestngXmlDir=src/main/resources/config -DtestngXmlFile=testng_web_desktop.xml -Dreportium-job-name=${JOB_NAME} -Dreportium-job-number=${BUILD_NUMBER}'
       }
     }
     stage('Deploy') {
