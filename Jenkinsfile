@@ -14,9 +14,9 @@ pipeline {
         sh '/Applications/apache-maven-3.2.2/bin/mvn test -f simplequantumrepo -DtestngXmlDir=src/main/resources/config -DtestngXmlFile=testng_web_desktop.xml -Dreportium-job-name=${JOB_NAME} -Dreportium-job-number=${BUILD_NUMBER}'
       }
     }
-    stage('Deploy') {
+    stage('Post Build Script') {
       steps {
-        sh '/Applications/apache-maven-3.2.2/bin/mvn package -f simplequantumrepo'
+        load 'postbuildscript.groovy'
       }
     }
   }
